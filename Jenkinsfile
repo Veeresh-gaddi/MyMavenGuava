@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Veeresh-gaddi/MyMavenGuavaApp.git'
+                git branch: 'master', url: 'https://github.com/Veeresh-gaddi/MyMavenGuava.git'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/MyMavenApp-1.0-SNAPSHOT.jar'
+                sh 'java -jar target/MyMavenGuavaApp-1.0-SNAPSHOT.jar'
             }
         }
 
